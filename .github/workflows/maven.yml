@@ -23,7 +23,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
 snyk-scan:
-  needs:test-with-JDK23
+  needs: test-with-JDK23
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@master
